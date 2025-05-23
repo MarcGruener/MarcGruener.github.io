@@ -1,0 +1,83 @@
+{
+  "name": "AI-Supported 3D Reconstruction of Peripheral Nerves",
+  "short_name": "Nerve Research",
+  "description": "Improving pediatric nerve assessment through AI-powered 3D reconstruction using ultrasound and video object segmentation",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6366f1",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["medical", "research", "education", "healthcare"],
+  "icons": [
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Our Team",
+      "short_name": "Team",
+      "description": "Meet the research team",
+      "url": "/#team",
+      "icons": [
+        {
+          "src": "/favicon-32x32.png",
+          "sizes": "32x32"
+        }
+      ]
+    },
+    {
+      "name": "Research Approach",
+      "short_name": "Approach",
+      "description": "Learn about our methodology",
+      "url": "/#approach",
+      "icons": [
+        {
+          "src": "/favicon-32x32.png",
+          "sizes": "32x32"
+        }
+      ]
+    },
+    {
+      "name": "Collaborate",
+      "short_name": "Collaborate",
+      "description": "Partner with our research",
+      "url": "/#collaborate",
+      "icons": [
+        {
+          "src": "/favicon-32x32.png",
+          "sizes": "32x32"
+        }
+      ]
+    }
+  ],
+  "prefer_related_applications": false
+} 
