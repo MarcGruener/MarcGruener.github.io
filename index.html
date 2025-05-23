@@ -9,88 +9,59 @@
 </head>
 
 <body>
-  <!-- HEADER -->
-  <!-- <header class="bg-white">
-        <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-          <a href="#" class="-m-1.5 p-1.5">
-            <span class="sr-only">Your Company</span>
-            <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="">
-          </a>
-          <div class="flex lg:hidden">
-            <button type="button" id="open-menu-button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-              <span class="sr-only">Open main menu</span>
-              <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
+  <!-- LANGUAGE SELECTOR -->
+  <nav class="bg-indigo-100/20">
+    <div class="mx-auto max-w-7xl lg:px-8">
+      <div class="px-6 lg:px-0">
+        <div class="flex justify-end py-3">
+          <div class="inline-flex items-center bg-gray-50 rounded-lg border border-gray-200 p-1">
+            <button 
+              id="lang-en" 
+              onclick="select_language('en')" 
+              class="flex items-center px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 bg-indigo-600 text-white shadow-sm">
+              <span class="text-base">🇬🇧</span>
+            </button>
+            <button 
+              id="lang-de" 
+              onclick="select_language('de')" 
+              class="flex items-center px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 text-gray-600 hover:text-gray-900 hover:bg-gray-50">
+              <span class="text-base">🇩🇪</span>
             </button>
           </div>
-          <div class="hidden lg:flex lg:gap-x-12">
-            <a href="#" class="text-sm/6 font-semibold text-gray-900">About</a>
-            <a href="#" class="text-sm/6 font-semibold text-gray-900">Features</a>
-            <a href="#" class="text-sm/6 font-semibold text-gray-900">Team</a>
-            <a href="#" class="text-sm/6 font-semibold text-gray-900">Collaborate</a>
-                </div>
-        </nav> -->
-  <!-- Mobile menu, show/hide based on menu open state. -->
-  <!-- <div class="lg:hidden hidden" id="mobile-menu" role="dialog" aria-modal="true">
-          <div class="fixed inset-0 z-10"></div>
-          <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-            <div class="flex items-center justify-between">
-              <a href="#" class="-m-1.5 p-1.5">
-                <span class="sr-only">Your Company</span>
-                <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="">
-              </a>
-              <button type="button" id="close-menu-button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
-                <span class="sr-only">Close menu</span>
-                <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
-            <div class="mt-6 flow-root">
-              <div class="-my-6 divide-y divide-gray-500/10">
-                <div class="space-y-2 py-6">
-                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">About</a>
-                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Features</a>
-                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Team</a>
-                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Collaborate</a>
-                </div>
-                <div class="py-6">
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </header> -->
+      </div>
+    </div>
+  </nav>
 
-
+  
   <!-- HERO SECTION -->
-  <div class="bg-white">
-    <div class="relative isolate overflow-hidden bg-gradient-to-b from-indigo-100/20">
-      <div class="mx-auto max-w-7xl pb-24 pt-10 sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:py-40">
-        <div class="px-6 lg:px-0 lg:pt-4">
-          <div class="mx-auto max-w-2xl">
-            <div class="max-w-lg">
-              <h1 class="mt-10 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-6xl">AI-Supported
-                3D Reconstruction of Peripheral Nerves</h1>
-            </div>
+  <div class="relative isolate overflow-hidden bg-gradient-to-b from-indigo-100/20">
+    <div class="mx-auto max-w-7xl pb-24 pt-10 sm:pb-32 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:px-8 lg:py-40">
+      <div class="px-6 lg:px-0 lg:pt-4">
+        <div class="mx-auto max-w-2xl">
+          <div class="max-w-lg">
+            <h1 lang="en" class="mt-10 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-6xl">
+              AI-Supported
+              3D Reconstruction of Peripheral Nerves</h1>
+            <h1 lang="de" class="mt-10 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-6xl">
+              KI-unterstützte 3D-Rekonstruktion von Peripheren Nerven</h1>
           </div>
         </div>
-        <div class="mt-20 sm:mt-24 md:mx-auto md:max-w-2xl lg:mx-0 lg:mt-0 lg:w-screen">
-          <div class="shadow-lg md:rounded-3xl">
-            <div class="bg-indigo-500 [clip-path:inset(0)] md:[clip-path:inset(0_round_theme(borderRadius.3xl))]">
-              <div class="mx-auto h-[32rem]">
-                <model-viewer alt="3D Nerve Reconstruction" src="staticfiles/other/nerve_model.gltf" ar shadow-intensity="1"
-                  camera-controls touch-action="pan-y"
-                  style="width: 100%; height: 100%; margin: 0 auto; display: block;"
-                  orientation="-20deg 90deg 20deg"></model-viewer>
-              </div>
+      </div>
+      <div class="mt-20 sm:mt-24 md:mx-auto md:max-w-2xl lg:mx-0 lg:mt-0">
+        <div class="shadow-lg md:rounded-3xl">
+          <div class="bg-indigo-500 [clip-path:inset(0)] md:[clip-path:inset(0_round_theme(borderRadius.3xl))]">
+            <div class="mx-auto h-[32rem]">
+              <model-viewer alt="3D Nerve Reconstruction" src="staticfiles/other/nerve_model.gltf" ar
+                shadow-intensity="1" camera-controls touch-action="pan-y"
+                style="width: 100%; height: 100%; margin: 0 auto; display: block;"
+                orientation="-20deg 90deg 20deg"></model-viewer>
             </div>
           </div>
         </div>
       </div>
-      <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
     </div>
+    <div class="absolute inset-x-0 bottom-0 -z-10 h-24 bg-gradient-to-t from-white sm:h-32"></div>
   </div>
 
 
@@ -115,34 +86,59 @@
   <div class="bg-white py-16 sm:py-24">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-        <p class="text-base/7 font-semibold text-indigo-600">Our Goal</p>
-        <h1 class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Reimagining
-          Pediatric
-          Nerve Assessment</h1>
+        <p lang="en" class="text-base/7 font-semibold text-indigo-600">Our Goal</p>
+        <p lang="de" class="text-base/7 font-semibold text-indigo-600">Unser Ziel</p>
+        <h1 lang="en" class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Reimagining
+          Pediatric Nerve Assessment</h1>
+        <h1 lang="de" class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+          Pädiatrische Nervenbeurteilung neu gedacht</h1>
         <div class="mt-10 grid max-w-xl grid-cols-1 gap-8 text-base/7 text-gray-700 lg:max-w-none lg:grid-cols-2">
           <div>
-            <p>Our research objective is to develop a reproducible methodology for comprehensive nerve assessment in
+            <p lang="en">Our research objective is to develop a reproducible methodology for comprehensive nerve
+              assessment in
               pediatric populations. Current ultrasound-based diagnostic approaches are constrained by reliance on
               cross-sectional area (CSA) measurements at 1-3 predefined anatomical locations, which fails to capture the
               complete morphological profile along the nerve's trajectory.</p>
-            <p class="mt-8">In conditions such as Type 1 diabetes (T1D) and spinal muscular atrophy (SMA), structural
+            <p lang="de">Unser Forschungsobjekt ist es, eine reproduzierbare Methode für die umfassende Nervenbeurteilung
+              bei Kindern und Jugendlichen zu entwickeln. Aktuelle Ultraschall-basierte diagnostische Ansätze sind
+              aufgrund der Abhängigkeit von Querschnittsflächen-Messungen (CSA) an 1-3 vorgegebenen anatomischen Stellen
+              eingeschränkt, was eine vollständige morphologische Untersuchung entlang der Nervenbahn nicht erlaubt.</p>
+  
+            <p lang="en" class="mt-8">In conditions such as Type 1 diabetes (T1D) and spinal muscular atrophy (SMA),
+              structural
               alterations in nerve morphology may occur heterogeneously along the nerve's course. These spatial
               variations
               remain undetected with conventional point measurement techniques, potentially limiting diagnostic
               sensitivity and longitudinal monitoring capabilities.</p>
+            <p lang="de" class="mt-8">Bei Erkrankungen wie Typ-1-Diabetes (T1D) und spinaler Muskelatrophie (SMA) können
+              strukturelle Veränderungen in der Nervenmorphologie heterogen entlang des Nervenverlaufs auftreten. Diese
+              räumlichen Variationen bleiben mit konventionellen Punktmessungstechniken unentdeckt, was möglicherweise die
+              diagnostische Sensitivität und die longitudinalen Überwachungsfähigkeiten einschränkt.</p>
           </div>
           <div>
-            <p>Our methodological framework integrates ultrasound video acquisition with the Segment Anything Model 2
+            <p lang="en">Our methodological framework integrates ultrasound video acquisition with the Segment Anything
+              Model 2
               (SAM2) deep learning algorithm to enable physician-guided frame-by-frame nerve segmentation with minimal
               annotation requirements. This approach facilitates the generation of comprehensive 3D reconstructions,
               from
               which we can derive quantitative metrics including volumetric parameters, cross-sectional variability, and
               shape characteristics.</p>
-            <p class="mt-8">Through validation against physician-annotated ground truth in multiple clinical cohorts
+            <p lang="de">Unser methodischer Ansatz integriert Ultraschall-Videoerfassung mit dem Segment Anything Model 2
+              (SAM2) Deep-Learning-Algorithmus, um eine arztgeleitete bildweise Nervensegmentierung mit minimalen
+              Annotationsanforderungen zu ermöglichen. Dieser Ansatz erleichtert die Generierung umfassender
+              3D-Rekonstruktionen, aus denen wir quantitative Metriken ableiten können, einschließlich volumetrischer
+              Parameter, Querschnittsvariabilität und Formcharakteristika.</p>
+            <p lang="en" class="mt-8">Through validation against physician-annotated ground truth in multiple clinical
+              cohorts
               (healthy controls, T1D, and SMA), we aim to establish the technical feasibility and clinical utility of
               this
               approach, with potential applications in diagnostic assessment, disease progression monitoring, and
               therapeutic response evaluation in pediatric neuromuscular disorders.</p>
+            <p lang="de" class="mt-8">Durch Validierung gegen ärztlich annotierte Referenzdaten in mehreren klinischen
+              Kohorten (gesunde Kontrollen, T1D und SMA) zielen wir darauf ab, die technische Machbarkeit und den
+              klinischen Nutzen dieses Ansatzes zu etablieren, mit potenziellen Anwendungen in der diagnostischen
+              Bewertung, dem Monitoring des Krankheitsverlaufs und der Bewertung des therapeutischen Ansprechens bei
+              pädiatrischen neuromuskulären Erkrankungen.</p>
           </div>
         </div>
       </div>
@@ -165,16 +161,23 @@
   <div class="bg-white py-16 sm:py-24">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl sm:text-center">
-        <h2 class="text-base/7 font-semibold text-indigo-600">Our Approach</h2>
-        <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-balance sm:text-5xl">Key
+        <h2 lang="en" class="text-base/7 font-semibold text-indigo-600">Our Approach</h2>
+        <h2 lang="de" class="text-base/7 font-semibold text-indigo-600">Unser Ansatz</h2>
+        <p lang="en"
+          class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-balance sm:text-5xl">Key
           Innovations</p>
-        <p class="mt-6 text-lg/8 text-gray-600">Using AI and ultrasound to advance how we visualize and assess
+        <p lang="de"
+          class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-balance sm:text-5xl">
+          Schlüsselinnovationen</p>
+        <p lang="en" class="mt-6 text-lg/8 text-gray-600">Using AI and ultrasound to advance how we visualize and assess
           peripheral nerves in children.</p>
+        <p lang="de" class="mt-6 text-lg/8 text-gray-600">Verwendung von KI und Ultraschall zur Weiterentwicklung der
+          Visualisierung und Beurteilung der peripheren Nerven bei Kindern und Jugendlichen.</p>
       </div>
     </div>
     <div class="relative overflow-hidden pt-16">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="mermaid mx-auto hidden md:block">
+        <div lang="en" class="mermaid mx-auto hidden md:block">
           flowchart LR
           classDef default fill:#f9f9fe,stroke:#6366f1,stroke-width:1px,color:#374151,font-family:ui-sans-serif,system-ui,sans-serif,font-weight:400
 
@@ -195,7 +198,7 @@
           F --> H["Physical Model"]
           F --> I["Quantitative Data"]
         </div>
-        <div class="mermaid mx-auto block md:hidden">
+        <div lang="en" class="mermaid mx-auto block md:hidden">
           flowchart TB
           classDef default fill:#f9f9fe,stroke:#6366f1,stroke-width:1px,color:#374151,font-family:ui-sans-serif,system-ui,sans-serif,font-weight:400
 
@@ -214,6 +217,48 @@
 
           F --> G["Digital Model"]
           F --> H["Physical Model"]
+          F --> I["Quantitative Data"]
+        </div>
+        <div lang="de" class="mermaid mx-auto hidden md:block">
+          flowchart LR
+          classDef default fill:#f9f9fe,stroke:#6366f1,stroke-width:1px,color:#374151,font-family:ui-sans-serif,system-ui,sans-serif,font-weight:400
+
+          A["Ultraschallvideo"] --> B["Arztannotation"]
+          B --> C["SAM2 Segmentation"]
+
+          C --> D["Nerven Segmentierung"]
+
+          subgraph Refinement [" "]
+            style Refinement fill:transparent,stroke:#e5e7eb,stroke-width:1px,color:#111827,stroke-dasharray: 5 5
+            E["Ärztliche Verfeinerung"] -.-> D
+            D -.-> E
+          end
+
+          D --> F["3D Rekonstruktion"]
+
+          F --> G["Digitales Modell"]
+          F --> H["Physikalisches Modell"]
+          F --> I["Quantitative Data"]
+        </div>
+        <div class="mermaid mx-auto block md:hidden">
+          flowchart TB
+          classDef default fill:#f9f9fe,stroke:#6366f1,stroke-width:1px,color:#374151,font-family:ui-sans-serif,system-ui,sans-serif,font-weight:400
+
+          A["Ultraschallvideo"] --> B["Arztannotation"]
+          B --> C["SAM2 Segmentation"]
+
+          C --> D["Nerven Segmentierung"]
+
+          subgraph Refinement [" "]
+            style Refinement fill:transparent,stroke:#e5e7eb,stroke-width:1px,color:#111827,stroke-dasharray: 5 5
+            E["Ärztliche Verfeinerung"] -.-> D
+            D -.-> E
+          end
+
+          D --> F["3D Rekonstruktion"]
+
+          F --> G["Digitales Modell"]
+          F --> H["Physikalisches Modell"]
           F --> I["Quantitative Data"]
         </div>
         <script>
@@ -245,29 +290,46 @@
         <div class="relative pl-9">
           <dt class="inline font-semibold text-gray-900">
             <div class="absolute left-1 top-1 size-5 text-indigo-600">🧠</div>
-            Complete Nerve Visualization
+            <span lang="en">Complete Nerve Visualization</span>
+            <span lang="de">Vollständige Nervenvisualisierung</span>
           </dt>
-          <dd class="inline">Unlike traditional point measurements, our method captures the entire structure of the
-            nerve, enabling physicians to detect subtle morphological changes along its complete length. This
+          <dd lang="en" class="inline">Unlike traditional point measurements, our method captures the entire structure of
+            the
+            nerve, enabling physicians to detect subtle morphological changes along its length. This
             comprehensive view provides unprecedented insight into nerve development and pathology.</dd>
+          <dd lang="de" class="inline">Im Gegensatz zu traditionellen Punktmessungen erlaubt unser Ansatz die vollständige
+            Struktur des Nerven zu erfassen, was Ärzten die Entdeckung subtiler morphologischer Veränderungen entlang der
+            Nervenbahn ermöglicht. Diese umfassende Sichtweise bietet eine neueartige Einsicht in die Entwicklung und
+            Pathologie der Nerven.</dd>
         </div>
         <div class="relative pl-9">
           <dt class="inline font-semibold text-gray-900">
             <div class="absolute left-1 top-1 size-5 text-indigo-600">🤖</div>
-            AI-Supported Segmentation
+            <span lang="en">AI-Supported Segmentation</span>
+            <span lang="de">KI-unterstützte Segmentierung</span>
           </dt>
-          <dd class="inline">We leverage the cutting-edge Segment Anything Model 2 (SAM2), an open-source computer
+          <dd lang="en" class="inline">We leverage the cutting-edge Segment Anything Model 2 (SAM2), an open-source computer
             vision model, to automate nerve segmentation in ultrasound videos. Our approach balances computational
             efficiency with physician control through selective refinement, making it practical for clinical use.</dd>
+          <dd lang="de" class="inline">Wir nutzen das fortschrittliche Segment Anything Model 2 (SAM2), ein
+            Open-Source-Computer-Vision-Modell, um die Nervensegmentierung in Ultraschallvideos teilweise zu automatisieren.
+            Unser Ansatz vereint die Effizienz von Computern mit der Kontrolle durch Ärzte durch selektive Verfeinerung, was
+            einen Einsatz im klinischen Alltag ermöglicht.</dd>
         </div>
         <div class="relative pl-9">
           <dt class="inline font-semibold text-gray-900">
             <div class="absolute left-1 top-1 size-5 text-indigo-600">🔍</div>
-            Novel Clinical Metrics
+            <span lang="en">Novel Clinical Metrics</span>
+            <span lang="de">Neue klinische Metriken</span>
           </dt>
-          <dd class="inline">Our 3D reconstruction enables the measurement of entirely new clinical metrics including
+          <dd lang="en" class="inline">Our 3D reconstruction enables the measurement of entirely new clinical metrics
+            including
             CSA changes, shape variations, and volume along the entire nerve. These measurements provide deeper insights
             into nerve pathology in conditions like Type 1 diabetes and spinal muscular atrophy.</dd>
+          <dd lang="de" class="inline">Unsere 3D-Rekonstruktion ermöglicht die Messung vollständig neuer klinischer
+            Metriken, einschließlich CSA-Änderungen, Formvariationen und Volumen entlang der gesamten Nervenbahn. Diese
+            Messungen bieten tiefere Einblicke in die Pathologie der Nerven bei Erkrankungen wie Typ-1-Diabetes und spinaler
+            Muskelatrophie.</dd>
         </div>
       </dl>
     </div>
@@ -279,54 +341,74 @@
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl lg:mx-0">
         <h2 class="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Our team</h2>
-        <p class="mt-6 text-lg/8 text-gray-600">We are a team of clinicians and researchers from the Childrens Hospital
+        <p lang="en" class="mt-6 text-lg/8 text-gray-600">We are a team of clinicians and researchers from the Childrens
+          Hospital
           of Eastern Switzerland and the University of St. Gallen - School of Computer Science.</p>
+        <p lang="de" class="mt-6 text-lg/8 text-gray-600">Wir sind ein Team von Ärzten und Forschern aus dem Ostschweizer
+          Kinderspital und der Universität St. Gallen - School of Computer Science.</p>
       </div>
       <ul role="list"
         class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
         <li>
-          <img class="aspect-[3/2] w-full rounded-2xl object-cover"
-            src="staticfiles/images/pbroser.png"
-            alt="">
+          <img class="aspect-[3/2] w-full rounded-2xl object-cover" src="staticfiles/images/pbroser.png" alt="">
           <h3 class="mt-6 text-lg/8 font-semibold tracking-tight text-gray-900">PD Dr. Philip Broser</h3>
-          <p class="text-base/7 text-gray-600">Childrens Hospital of Eastern Switzerland</p>
+          <p lang="en" class="text-base/7 text-gray-600">Childrens Hospital of Eastern Switzerland</p>
+          <p lang="de" class="text-base/7 text-gray-600">Ostschweizer Kinderspital</p>
           <ul role="list" class="mt-6 flex gap-x-6">
             <li>
-              <a target="_blank" href="https://orcid.org/0000-0003-4477-1432"
-                class="text-gray-400 hover:text-gray-500">
+              <a target="_blank" href="https://orcid.org/0000-0003-4477-1432" class="text-gray-400 hover:text-gray-500">
                 <span class="sr-only">ORCID</span>
-                <svg class="size-5" fill="currentColor" viewBox="0 0 1536 1536" xmlns="http://www.w3.org/2000/svg"><path d="m1536 768c0 424.2-343.8 768-768 768s-768-343.8-768-768 343.8-768 768-768 768 343.8 768 768z" stroke-width="6"/><g fill="#fff" transform="scale(6)"><path d="m86.3 186.2h-15.4v-107.1h15.4v48.4z"/><path d="m108.9 79.1h41.6c39.6 0 57 28.3 57 53.6 0 27.5-21.5 53.6-56.8 53.6h-41.8zm15.4 93.3h24.5c34.9 0 42.9-26.5 42.9-39.7 0-21.5-13.7-39.7-43.7-39.7h-23.7z"/><path d="m88.7 56.8c0 5.5-4.5 10.1-10.1 10.1s-10.1-4.6-10.1-10.1c0-5.6 4.5-10.1 10.1-10.1s10.1 4.6 10.1 10.1z"/></g></svg>
+                <svg class="size-5" fill="currentColor" viewBox="0 0 1536 1536" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m1536 768c0 424.2-343.8 768-768 768s-768-343.8-768-768 343.8-768 768-768 768 343.8 768 768z"
+                    stroke-width="6" />
+                  <g fill="#fff" transform="scale(6)">
+                    <path d="m86.3 186.2h-15.4v-107.1h15.4v48.4z" />
+                    <path
+                      d="m108.9 79.1h41.6c39.6 0 57 28.3 57 53.6 0 27.5-21.5 53.6-56.8 53.6h-41.8zm15.4 93.3h24.5c34.9 0 42.9-26.5 42.9-39.7 0-21.5-13.7-39.7-43.7-39.7h-23.7z" />
+                    <path
+                      d="m88.7 56.8c0 5.5-4.5 10.1-10.1 10.1s-10.1-4.6-10.1-10.1c0-5.6 4.5-10.1 10.1-10.1s10.1 4.6 10.1 10.1z" />
+                  </g>
+                </svg>
               </a>
             </li>
             <!-- <li>
-              <a href="#" class="text-gray-400 hover:text-gray-500">
-                <span class="sr-only">LinkedIn</span>
-                <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                  <path fill-rule="evenodd"
-                    d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
-                    clip-rule="evenodd" />
-                </svg>
-              </a>
-            </li> -->
+                <a href="#" class="text-gray-400 hover:text-gray-500">
+                  <span class="sr-only">LinkedIn</span>
+                  <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                      d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </li> -->
           </ul>
         </li>
-
+  
         <li>
-          <img class="aspect-[3/2] w-full rounded-2xl object-cover"
-            src="staticfiles/images/mgruener.png"
-            alt="">
+          <img class="aspect-[3/2] w-full rounded-2xl object-cover" src="staticfiles/images/mgruener.png" alt="">
           <h3 class="mt-6 text-lg/8 font-semibold tracking-tight text-gray-900">Marc Robin Gruener</h3>
-          <p class="text-base/7 text-gray-600">Childrens Hospital of Eastern Switzerland</p>
+          <p lang="en" class="text-base/7 text-gray-600">Childrens Hospital of Eastern Switzerland</p>
+          <p lang="de" class="text-base/7 text-gray-600">Ostschweizer Kinderspital</p>
           <ul role="list" class="mt-6 flex gap-x-6">
             <li>
-              <a target="_blank" href="https://orcid.org/0000-0001-5133-0227"
-                class="text-gray-400 hover:text-gray-500">
+              <a target="_blank" href="https://orcid.org/0000-0001-5133-0227" class="text-gray-400 hover:text-gray-500">
                 <span class="sr-only">ORCID</span>
-                <svg class="size-5" fill="currentColor" viewBox="0 0 1536 1536" xmlns="http://www.w3.org/2000/svg"><path d="m1536 768c0 424.2-343.8 768-768 768s-768-343.8-768-768 343.8-768 768-768 768 343.8 768 768z" stroke-width="6"/><g fill="#fff" transform="scale(6)"><path d="m86.3 186.2h-15.4v-107.1h15.4v48.4z"/><path d="m108.9 79.1h41.6c39.6 0 57 28.3 57 53.6 0 27.5-21.5 53.6-56.8 53.6h-41.8zm15.4 93.3h24.5c34.9 0 42.9-26.5 42.9-39.7 0-21.5-13.7-39.7-43.7-39.7h-23.7z"/><path d="m88.7 56.8c0 5.5-4.5 10.1-10.1 10.1s-10.1-4.6-10.1-10.1c0-5.6 4.5-10.1 10.1-10.1s10.1 4.6 10.1 10.1z"/></g></svg>
+                <svg class="size-5" fill="currentColor" viewBox="0 0 1536 1536" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m1536 768c0 424.2-343.8 768-768 768s-768-343.8-768-768 343.8-768 768-768 768 343.8 768 768z"
+                    stroke-width="6" />
+                  <g fill="#fff" transform="scale(6)">
+                    <path d="m86.3 186.2h-15.4v-107.1h15.4v48.4z" />
+                    <path
+                      d="m108.9 79.1h41.6c39.6 0 57 28.3 57 53.6 0 27.5-21.5 53.6-56.8 53.6h-41.8zm15.4 93.3h24.5c34.9 0 42.9-26.5 42.9-39.7 0-21.5-13.7-39.7-43.7-39.7h-23.7z" />
+                    <path
+                      d="m88.7 56.8c0 5.5-4.5 10.1-10.1 10.1s-10.1-4.6-10.1-10.1c0-5.6 4.5-10.1 10.1-10.1s10.1 4.6 10.1 10.1z" />
+                  </g>
+                </svg>
               </a>
             </li>
             <li>
-              <a target="_blank"  href="https://www.linkedin.com/in/marc-robin-gruener/" class="text-gray-400 hover:text-gray-500">
+              <a target="_blank" href="https://www.linkedin.com/in/marc-robin-gruener/"
+                class="text-gray-400 hover:text-gray-500">
                 <span class="sr-only">LinkedIn</span>
                 <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                   <path fill-rule="evenodd"
@@ -337,23 +419,32 @@
             </li>
           </ul>
         </li>
-
+  
         <li>
-          <img class="aspect-[3/2] w-full rounded-2xl object-cover"
-            src="staticfiles/images/kbektas.png"
-            alt="">
+          <img class="aspect-[3/2] w-full rounded-2xl object-cover" src="staticfiles/images/kbektas.png" alt="">
           <h3 class="mt-6 text-lg/8 font-semibold tracking-tight text-gray-900">Dr. Kenan Bektaş</h3>
-          <p class="text-base/7 text-gray-600">University of St. Gallen - School of Computer Science</p>
+          <p lang="en" class="text-base/7 text-gray-600">University of St. Gallen - School of Computer Science</p>
+          <p lang="de" class="text-base/7 text-gray-600">Universität St. Gallen - School of Computer Science</p>
           <ul role="list" class="mt-6 flex gap-x-6">
             <li>
-              <a target="_blank" href="https://orcid.org/0000-0003-2937-0542"
-                class="text-gray-400 hover:text-gray-500">
+              <a target="_blank" href="https://orcid.org/0000-0003-2937-0542" class="text-gray-400 hover:text-gray-500">
                 <span class="sr-only">ORCID</span>
-                <svg class="size-5" fill="currentColor" viewBox="0 0 1536 1536" xmlns="http://www.w3.org/2000/svg"><path d="m1536 768c0 424.2-343.8 768-768 768s-768-343.8-768-768 343.8-768 768-768 768 343.8 768 768z" stroke-width="6"/><g fill="#fff" transform="scale(6)"><path d="m86.3 186.2h-15.4v-107.1h15.4v48.4z"/><path d="m108.9 79.1h41.6c39.6 0 57 28.3 57 53.6 0 27.5-21.5 53.6-56.8 53.6h-41.8zm15.4 93.3h24.5c34.9 0 42.9-26.5 42.9-39.7 0-21.5-13.7-39.7-43.7-39.7h-23.7z"/><path d="m88.7 56.8c0 5.5-4.5 10.1-10.1 10.1s-10.1-4.6-10.1-10.1c0-5.6 4.5-10.1 10.1-10.1s10.1 4.6 10.1 10.1z"/></g></svg>
+                <svg class="size-5" fill="currentColor" viewBox="0 0 1536 1536" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m1536 768c0 424.2-343.8 768-768 768s-768-343.8-768-768 343.8-768 768-768 768 343.8 768 768z"
+                    stroke-width="6" />
+                  <g fill="#fff" transform="scale(6)">
+                    <path d="m86.3 186.2h-15.4v-107.1h15.4v48.4z" />
+                    <path
+                      d="m108.9 79.1h41.6c39.6 0 57 28.3 57 53.6 0 27.5-21.5 53.6-56.8 53.6h-41.8zm15.4 93.3h24.5c34.9 0 42.9-26.5 42.9-39.7 0-21.5-13.7-39.7-43.7-39.7h-23.7z" />
+                    <path
+                      d="m88.7 56.8c0 5.5-4.5 10.1-10.1 10.1s-10.1-4.6-10.1-10.1c0-5.6 4.5-10.1 10.1-10.1s10.1 4.6 10.1 10.1z" />
+                  </g>
+                </svg>
               </a>
             </li>
             <li>
-              <a target="_blank"  href="https://www.linkedin.com/in/kenanbektas/" class="text-gray-400 hover:text-gray-500">
+              <a target="_blank" href="https://www.linkedin.com/in/kenanbektas/"
+                class="text-gray-400 hover:text-gray-500">
                 <span class="sr-only">LinkedIn</span>
                 <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                   <path fill-rule="evenodd"
@@ -364,23 +455,32 @@
             </li>
           </ul>
         </li>
-
+  
         <li>
-          <img class="aspect-[3/2] w-full rounded-2xl object-cover"
-            src="staticfiles/images/smayer.png"
-            alt="">
+          <img class="aspect-[3/2] w-full rounded-2xl object-cover" src="staticfiles/images/smayer.png" alt="">
           <h3 class="mt-6 text-lg/8 font-semibold tracking-tight text-gray-900">Prof. Dr. Simon Mayer</h3>
-          <p class="text-base/7 text-gray-600">University of St. Gallen - School of Computer Science</p>
+          <p lang="en" class="text-base/7 text-gray-600">University of St. Gallen - School of Computer Science</p>
+          <p lang="de" class="text-base/7 text-gray-600">Universität St. Gallen - School of Computer Science</p>
           <ul role="list" class="mt-6 flex gap-x-6">
             <li>
-              <a target="_blank" href="https://orcid.org/0000-0001-6367-3454"
-                class="text-gray-400 hover:text-gray-500">
+              <a target="_blank" href="https://orcid.org/0000-0001-6367-3454" class="text-gray-400 hover:text-gray-500">
                 <span class="sr-only">ORCID</span>
-                <svg class="size-5" fill="currentColor" viewBox="0 0 1536 1536" xmlns="http://www.w3.org/2000/svg"><path d="m1536 768c0 424.2-343.8 768-768 768s-768-343.8-768-768 343.8-768 768-768 768 343.8 768 768z" stroke-width="6"/><g fill="#fff" transform="scale(6)"><path d="m86.3 186.2h-15.4v-107.1h15.4v48.4z"/><path d="m108.9 79.1h41.6c39.6 0 57 28.3 57 53.6 0 27.5-21.5 53.6-56.8 53.6h-41.8zm15.4 93.3h24.5c34.9 0 42.9-26.5 42.9-39.7 0-21.5-13.7-39.7-43.7-39.7h-23.7z"/><path d="m88.7 56.8c0 5.5-4.5 10.1-10.1 10.1s-10.1-4.6-10.1-10.1c0-5.6 4.5-10.1 10.1-10.1s10.1 4.6 10.1 10.1z"/></g></svg>
+                <svg class="size-5" fill="currentColor" viewBox="0 0 1536 1536" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m1536 768c0 424.2-343.8 768-768 768s-768-343.8-768-768 343.8-768 768-768 768 343.8 768 768z"
+                    stroke-width="6" />
+                  <g fill="#fff" transform="scale(6)">
+                    <path d="m86.3 186.2h-15.4v-107.1h15.4v48.4z" />
+                    <path
+                      d="m108.9 79.1h41.6c39.6 0 57 28.3 57 53.6 0 27.5-21.5 53.6-56.8 53.6h-41.8zm15.4 93.3h24.5c34.9 0 42.9-26.5 42.9-39.7 0-21.5-13.7-39.7-43.7-39.7h-23.7z" />
+                    <path
+                      d="m88.7 56.8c0 5.5-4.5 10.1-10.1 10.1s-10.1-4.6-10.1-10.1c0-5.6 4.5-10.1 10.1-10.1s10.1 4.6 10.1 10.1z" />
+                  </g>
+                </svg>
               </a>
             </li>
             <li>
-              <a target="_blank"  href="https://www.linkedin.com/in/simon-mayer-b7979936/" class="text-gray-400 hover:text-gray-500">
+              <a target="_blank" href="https://www.linkedin.com/in/simon-mayer-b7979936/"
+                class="text-gray-400 hover:text-gray-500">
                 <span class="sr-only">LinkedIn</span>
                 <svg class="size-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                   <path fill-rule="evenodd"
@@ -401,33 +501,65 @@
     <div class="mx-auto max-w-7xl px-6 py-16 sm:pt-20 lg:px-8 lg:py-24">
       <div class="lg:grid lg:grid-cols-12 lg:gap-8">
         <div class="lg:col-span-5">
-          <h2 class="text-pretty text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Open Master Thesis Topics</h2>
-          <p class="mt-4 text-pretty text-base/7 text-gray-600">Want to suggest a topic? Reach out to <a href="mailto:marc-robin.gruener@unisg.ch?subject=Nerve Sonography Thesis Topic" class="font-semibold text-indigo-600 hover:text-indigo-500">us directly</a>.</p>
+          <h2 lang="en" class="text-pretty text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Open Master
+            Thesis Topics</h2>
+          <h2 lang="de" class="text-pretty text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Offene
+            Masterarbeitsthemen</h2>
+  
+          <p lang="en" class="mt-4 text-pretty text-base/7 text-gray-600">Want to suggest a topic? Reach out to <a
+              href="mailto:marc-robin.gruener@unisg.ch?subject=Nerve Sonography Thesis Topic"
+              class="font-semibold text-indigo-600 hover:text-indigo-500">us directly</a>.</p>
+          <p lang="de" class="mt-4 text-pretty text-base/7 text-gray-600">Du möchtest ein Thema vorschlagen? Kontaktiere
+            uns direkt unter <a href="mailto:marc-robin.gruener@unisg.ch?subject=Nerve Sonography Thesis Topic"
+              class="font-semibold text-indigo-600 hover:text-indigo-500">marc-robin.gruener@unisg.ch</a>.</p>
         </div>
         <div class="mt-10 lg:col-span-7 lg:mt-0">
           <dl class="space-y-10">
             <div>
-              <dt class="text-base/7 font-semibold text-gray-900">Application of Video Object Segmentation for Pediatric Nerve Ultrasound</dt>
-              <dd class="mt-2 text-base/7 text-gray-600">Development of an automated pipeline for median nerve ultrasound segmentation and 3D reconstruction to enhance clinical assessment of peripheral nerve pathologies in pediatric Type-1 diabetes and spinal muscular atrophy patients. <a target="_blank" href="https://ics.unisg.ch/chairs/simon-mayer-interaction-and-communication-based-systems/#:~:text=[Bachelor/Master]%20Application%20of%20Video%20Object%20Segmentation%20for%20Pediatric%20Nerve%20Ultrasound" class="text-sm/6 font-semibold text-indigo-600 hover:text-indigo-500">Learn more <span aria-hidden="true">→</span></a></dd>
-              
+              <dt lang="en" class="text-base/7 font-semibold text-gray-900">Application of Video Object Segmentation for
+                Pediatric Nerve Ultrasound</dt>
+              <dt lang="de" class="text-base/7 font-semibold text-gray-900">Anwendung der Videoobjektsegmentierung für
+                pädiatrischen Nervenultraschall</dt>
+              <dd lang="en" class="mt-2 text-base/7 text-gray-600">Development of an automated pipeline for median nerve
+                ultrasound segmentation and 3D reconstruction to enhance clinical assessment of peripheral nerve
+                pathologies in pediatric Type-1 diabetes and spinal muscular atrophy patients. <a target="_blank"
+                  href="https://ics.unisg.ch/chairs/simon-mayer-interaction-and-communication-based-systems/#:~:text=[Bachelor/Master]%20Application%20of%20Video%20Object%20Segmentation%20for%20Pediatric%20Nerve%20Ultrasound"
+                  class="text-sm/6 font-semibold text-indigo-600 hover:text-indigo-500">Learn more <span
+                    aria-hidden="true">→</span></a></dd>
+              <dd lang="de" class="mt-2 text-base/7 text-gray-600">Entwicklung einer automatisierten Pipeline für die
+                Ultraschall-Segmentierung des Nervus medianus und 3D-Rekonstruktion zur Verbesserung der klinischen
+                Bewertung peripherer Nervenpathologien bei pädiatrischen Typ-1-Diabetes- und spinalen
+                Muskelatrophie-Patienten. <a target="_blank"
+                  href="https://ics.unisg.ch/chairs/simon-mayer-interaction-and-communication-based-systems/#:~:text=[Bachelor/Master]%20Application%20of%20Video%20Object%20Segmentation%20for%20Pediatric%20Nerve%20Ultrasound"
+                  class="text-sm/6 font-semibold text-indigo-600 hover:text-indigo-500">Mehr erfahren <span
+                    aria-hidden="true">→</span></a></dd>
+  
             </div>
           </dl>
         </div>
       </div>
     </div>
   </div>
-
+  
   <div class="bg-white py-16 sm:py-24">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div
-        class="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
-        <h2 class="text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl">Collaborate with us</h2>
-        <p class="mx-auto mt-6 max-w-xl text-pretty text-lg/8 text-gray-300">We welcome collaborations with clinicians,
+      <div class="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
+        <h2 lang="en" class="text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl">Collaborate with
+          us</h2>
+        <h2 lang="de" class="text-balance text-4xl font-semibold tracking-tight text-white sm:text-5xl">Arbeite mit uns
+          zusammen</h2>
+        <p lang="en" class="mx-auto mt-6 max-w-xl text-pretty text-lg/8 text-gray-300">We welcome collaborations with
+          clinicians,
           researchers, and industry partners to advance the development of our technology.</p>
+        <p lang="de" class="mx-auto mt-6 max-w-xl text-pretty text-lg/8 text-gray-300">Wir freuen uns auf Kooperationen
+          mit Ärzten, Forschern und Praktikern, um die Entwicklung unserer Technologie voranzubringen.</p>
         <div class="mt-10 flex items-center justify-center gap-x-6">
-          <a href="mailto:marc-robin.gruener@unisg.ch?subject=Nerve Sonography Collaboration"
+          <a lang="en" href="mailto:marc-robin.gruener@unisg.ch?subject=Nerve Sonography Collaboration"
             class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Reach
             Out</a>
+          <a lang="de" href="mailto:marc-robin.gruener@unisg.ch?subject=Nerve Sonography Collaboration"
+            class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Kontaktiere
+            uns</a>
         </div>
         <svg viewBox="0 0 1024 1024"
           class="absolute left-1/2 top-1/2 -z-10 size-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
@@ -444,7 +576,49 @@
     </div>
   </div>
 
-
+  <script>
+    function select_language(language) {
+      // Get all elements with lang attribute
+      const elementsWithLang = document.querySelectorAll("[lang]");
+      
+      elementsWithLang.forEach(function (element) {
+        if (element.getAttribute("lang") === language) {
+          element.style.display = "";  // Show the element
+        } else {
+          element.style.display = "none";  // Hide the element
+        }
+      });
+      
+      // Update button states
+      const enButton = document.getElementById('lang-en');
+      const deButton = document.getElementById('lang-de');
+      
+      if (language === 'en') {
+        enButton.className = "flex items-center px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 bg-indigo-600 text-white shadow-sm";
+        deButton.className = "flex items-center px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 text-gray-600 hover:text-gray-900 hover:bg-gray-50";
+      } else {
+        deButton.className = "flex items-center px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 bg-indigo-600 text-white shadow-sm";
+        enButton.className = "flex items-center px-3 py-2 rounded-md text-sm font-medium transition-all duration-200 text-gray-600 hover:text-gray-900 hover:bg-gray-50";
+      }
+    }
+    
+    // Initialize with default language when page loads
+    document.addEventListener('DOMContentLoaded', function () {
+      // First, make sure all mermaid diagrams are visible so they can be processed
+      document.querySelectorAll('.mermaid').forEach(diagram => {
+        diagram.style.display = '';
+      });
+      
+      // Initialize all mermaid diagrams
+      if (typeof mermaid !== 'undefined') {
+        mermaid.init();
+      }
+      
+      // Wait a bit for mermaid to finish processing, then set the default language
+      setTimeout(() => {
+        select_language('en');
+      }, 500);
+    });
+  </script>
 </body>
-
 </html>
